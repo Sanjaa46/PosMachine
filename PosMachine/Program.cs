@@ -1,10 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using System.Windows.Forms;
+using POSMachine.Data;
+using POSMachine.Models;
 
-namespace PosMachine
+namespace POSMachine
 {
     static class Program
     {
@@ -16,7 +15,21 @@ namespace PosMachine
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            // Initialize the database
+            DatabaseHelper.InitializeDatabase();
+
+            // Show login form
+            using (var loginForm = new LoginForm())
+            {
+                var result = loginForm.ShowDialog();
+
+                if (result == DialogResult.OK && loginForm.CurrentUser != null)
+                {
+                    // Log in successful, open main form
+                    Application.Run(new MainForm(loginForm.CurrentUser));
+                }
+            }
         }
     }
 }
