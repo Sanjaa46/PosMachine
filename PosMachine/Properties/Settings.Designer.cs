@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PosMachine.Properties
+namespace POSMachine.Properties
 {
 
 

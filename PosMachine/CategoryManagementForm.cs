@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Windows.Forms;
-using PosMachine.Data;
-using PosMachine.Models;
 using System.Xml.Linq;
 using POSMachine.Data;
 using POSMachine.Models;

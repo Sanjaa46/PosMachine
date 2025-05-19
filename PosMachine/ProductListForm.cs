@@ -4,8 +4,6 @@ using System.Drawing;
 using System.IO;
 using System.Linq;
 using System.Windows.Forms;
-using PosMachine.Data;
-using PosMachine.Models;
 using POSMachine.Data;
 using POSMachine.Models;
 

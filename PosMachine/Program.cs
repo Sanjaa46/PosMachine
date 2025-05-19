@@ -7,9 +7,6 @@ namespace POSMachine
 {
     static class Program
     {
-        /// <summary>
-        /// The main entry point for the application.
-        /// </summary>
         [STAThread]
         static void Main()
         {
@@ -17,7 +14,16 @@ namespace POSMachine
             Application.SetCompatibleTextRenderingDefault(false);
 
             // Initialize the database
-            DatabaseHelper.InitializeDatabase();
+            try
+            {
+                DatabaseHelper.InitializeDatabase();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Failed to initialize database: {ex.Message}",
+                    "Database Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
 
             // Show login form
             using (var loginForm = new LoginForm())
