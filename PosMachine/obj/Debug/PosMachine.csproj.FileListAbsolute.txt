@@ -1,0 +1,4 @@
+C:\Users\sanja\source\repos\PosMachine\PosMachine\obj\Debug\PosMachine.csproj.AssemblyReference.cache
+C:\Users\sanja\source\repos\PosMachine\PosMachine\obj\Debug\PosMachine.Properties.Resources.resources
+C:\Users\sanja\source\repos\PosMachine\PosMachine\obj\Debug\PosMachine.csproj.GenerateResource.cache
+C:\Users\sanja\source\repos\PosMachine\PosMachine\obj\Debug\PosMachine.csproj.CoreCompileInputs.cache
