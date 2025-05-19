@@ -10,3 +10,4 @@ C:\Users\sanja\source\repos\PosMachine\PosMachine\bin\Debug\System.Data.SQLite.x
 C:\Users\sanja\source\repos\PosMachine\PosMachine\obj\Debug\PosMachine.csproj.Up2Date
 C:\Users\sanja\source\repos\PosMachine\PosMachine\obj\Debug\PosMachine.exe
 C:\Users\sanja\source\repos\PosMachine\PosMachine\obj\Debug\PosMachine.pdb
+C:\Users\sanja\source\repos\PosMachine\PosMachine\obj\Debug\POSMachine.MainForm.resources

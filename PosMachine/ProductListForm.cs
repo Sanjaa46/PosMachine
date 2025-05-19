@@ -20,6 +20,34 @@ namespace POSMachine
             InitializeComponent();
             _currentUser = user;
             LoadData();
+            SetupSearchIcon();
+        }
+
+        private void SetupSearchIcon()
+        {
+            // Create a search icon programmatically
+            Bitmap searchIcon = new Bitmap(24, 24);
+            using (Graphics g = Graphics.FromImage(searchIcon))
+            {
+                g.Clear(Color.Transparent);
+
+                // Draw a magnifying glass
+                g.SmoothingMode = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+
+                // Draw the circular part
+                using (Pen pen = new Pen(Color.Gray, 2))
+                {
+                    g.DrawEllipse(pen, 2, 2, 14, 14);
+                }
+
+                // Draw the handle
+                using (Pen pen = new Pen(Color.Gray, 2))
+                {
+                    g.DrawLine(pen, 14, 14, 20, 20);
+                }
+            }
+
+            picSearchIcon.Image = searchIcon;
         }
 
         private void LoadData()

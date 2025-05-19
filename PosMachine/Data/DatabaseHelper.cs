@@ -42,59 +42,57 @@ namespace POSMachine.Data
                     {
                         // Create Users table
                         string createUserTableSql = @"
-                            CREATE TABLE Users (
-                                Id INTEGER PRIMARY KEY AUTOINCREMENT,
-                                Username TEXT NOT NULL UNIQUE,
-                                Password TEXT NOT NULL,
-                                Role INTEGER NOT NULL
-                            );";
+                    CREATE TABLE Users (
+                        Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        Username TEXT NOT NULL UNIQUE,
+                        Password TEXT NOT NULL,
+                        Role INTEGER NOT NULL
+                    );";
 
                         // Create Categories table
                         string createCategoryTableSql = @"
-                            CREATE TABLE Categories (
-                                Id INTEGER PRIMARY KEY AUTOINCREMENT,
-                                Name TEXT NOT NULL UNIQUE
-                            );";
+                    CREATE TABLE Categories (
+                        Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        Name TEXT NOT NULL UNIQUE
+                    );";
 
                         // Create Products table
                         string createProductTableSql = @"
-                            CREATE TABLE Products (
-                                Id INTEGER PRIMARY KEY AUTOINCREMENT,
-                                Code TEXT NOT NULL UNIQUE,
-                                Name TEXT NOT NULL,
-                                Price REAL NOT NULL,
-                                CategoryId INTEGER,
-                                Image BLOB,
-                                FOREIGN KEY (CategoryId) REFERENCES Categories(Id)
-                            );";
+                    CREATE TABLE Products (
+                        Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        Code TEXT NOT NULL UNIQUE,
+                        Name TEXT NOT NULL,
+                        Price REAL NOT NULL,
+                        CategoryId INTEGER,
+                        Image BLOB,
+                        FOREIGN KEY (CategoryId) REFERENCES Categories(Id)
+                    );";
 
-                        // Create Orders table
+                        // Create Orders table - NO TAX FIELDS
                         string createOrderTableSql = @"
-                            CREATE TABLE Orders (
-                                Id INTEGER PRIMARY KEY AUTOINCREMENT,
-                                OrderDate TEXT NOT NULL,
-                                UserId INTEGER NOT NULL,
-                                Subtotal REAL NOT NULL,
-                                CGST REAL NOT NULL,
-                                IGST REAL NOT NULL,
-                                Total REAL NOT NULL,
-                                AmountPaid REAL NOT NULL,
-                                Change REAL NOT NULL,
-                                FOREIGN KEY (UserId) REFERENCES Users(Id)
-                            );";
+                    CREATE TABLE Orders (
+                        Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        OrderDate TEXT NOT NULL,
+                        UserId INTEGER NOT NULL,
+                        Subtotal REAL NOT NULL,
+                        Total REAL NOT NULL,
+                        AmountPaid REAL NOT NULL,
+                        Change REAL NOT NULL,
+                        FOREIGN KEY (UserId) REFERENCES Users(Id)
+                    );";
 
                         // Create OrderItems table
                         string createOrderItemTableSql = @"
-                            CREATE TABLE OrderItems (
-                                Id INTEGER PRIMARY KEY AUTOINCREMENT,
-                                OrderId INTEGER NOT NULL,
-                                ProductId INTEGER NOT NULL,
-                                ProductName TEXT NOT NULL,
-                                Price REAL NOT NULL,
-                                Quantity INTEGER NOT NULL,
-                                FOREIGN KEY (OrderId) REFERENCES Orders(Id),
-                                FOREIGN KEY (ProductId) REFERENCES Products(Id)
-                            );";
+                    CREATE TABLE OrderItems (
+                        Id INTEGER PRIMARY KEY AUTOINCREMENT,
+                        OrderId INTEGER NOT NULL,
+                        ProductId INTEGER NOT NULL,
+                        ProductName TEXT NOT NULL,
+                        Price REAL NOT NULL,
+                        Quantity INTEGER NOT NULL,
+                        FOREIGN KEY (OrderId) REFERENCES Orders(Id),
+                        FOREIGN KEY (ProductId) REFERENCES Products(Id)
+                    );";
 
                         ExecuteNonQuery(connection, transaction, createUserTableSql);
                         ExecuteNonQuery(connection, transaction, createCategoryTableSql);
@@ -529,19 +527,17 @@ namespace POSMachine.Data
                 {
                     try
                     {
-                        // Insert order
+                        // Insert order - NO TAX FIELDS
                         string orderSql = @"
-                    INSERT INTO Orders (OrderDate, UserId, Subtotal, CGST, IGST, Total, AmountPaid, Change)
-                    VALUES (@OrderDate, @UserId, @Subtotal, @CGST, @IGST, @Total, @AmountPaid, @Change);
-                    SELECT last_insert_rowid();";
+                INSERT INTO Orders (OrderDate, UserId, Subtotal, Total, AmountPaid, Change)
+                VALUES (@OrderDate, @UserId, @Subtotal, @Total, @AmountPaid, @Change);
+                SELECT last_insert_rowid();";
 
                         using (var command = new SQLiteCommand(orderSql, connection, transaction))
                         {
                             command.Parameters.AddWithValue("@OrderDate", order.OrderDate.ToString("yyyy-MM-dd HH:mm:ss"));
                             command.Parameters.AddWithValue("@UserId", order.UserId);
                             command.Parameters.AddWithValue("@Subtotal", order.Subtotal);
-                            command.Parameters.AddWithValue("@CGST", order.CGST);
-                            command.Parameters.AddWithValue("@IGST", order.IGST);
                             command.Parameters.AddWithValue("@Total", order.Total);
                             command.Parameters.AddWithValue("@AmountPaid", order.AmountPaid);
                             command.Parameters.AddWithValue("@Change", order.Change);
@@ -551,8 +547,8 @@ namespace POSMachine.Data
 
                         // Insert order items
                         string itemSql = @"
-                    INSERT INTO OrderItems (OrderId, ProductId, ProductName, Price, Quantity)
-                    VALUES (@OrderId, @ProductId, @ProductName, @Price, @Quantity);";
+                INSERT INTO OrderItems (OrderId, ProductId, ProductName, Price, Quantity)
+                VALUES (@OrderId, @ProductId, @ProductName, @Price, @Quantity);";
 
                         foreach (var item in order.Items)
                         {
@@ -607,8 +603,6 @@ namespace POSMachine.Data
                                 OrderDate = DateTime.Parse(reader["OrderDate"].ToString()),
                                 UserId = Convert.ToInt32(reader["UserId"]),
                                 Subtotal = Convert.ToDecimal(reader["Subtotal"]),
-                                CGST = Convert.ToDecimal(reader["CGST"]),
-                                IGST = Convert.ToDecimal(reader["IGST"]),
                                 Total = Convert.ToDecimal(reader["Total"]),
                                 AmountPaid = Convert.ToDecimal(reader["AmountPaid"]),
                                 Change = Convert.ToDecimal(reader["Change"]),
@@ -618,9 +612,9 @@ namespace POSMachine.Data
                     }
                 }
 
+                // Get order items
                 if (order != null)
                 {
-                    // Get order items
                     string itemsSql = "SELECT * FROM OrderItems WHERE OrderId = @OrderId;";
 
                     using (var command = new SQLiteCommand(itemsSql, connection))
@@ -711,8 +705,6 @@ namespace POSMachine.Data
                                 OrderDate = DateTime.Parse(reader["OrderDate"].ToString()),
                                 UserId = Convert.ToInt32(reader["UserId"]),
                                 Subtotal = Convert.ToDecimal(reader["Subtotal"]),
-                                CGST = Convert.ToDecimal(reader["CGST"]),
-                                IGST = Convert.ToDecimal(reader["IGST"]),
                                 Total = Convert.ToDecimal(reader["Total"]),
                                 AmountPaid = Convert.ToDecimal(reader["AmountPaid"]),
                                 Change = Convert.ToDecimal(reader["Change"])
