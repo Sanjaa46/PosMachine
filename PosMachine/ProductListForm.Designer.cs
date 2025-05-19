@@ -1,4 +1,4 @@
-﻿namespace PosMachine
+﻿namespace POSMachine
 {
     partial class ProductListForm
     {

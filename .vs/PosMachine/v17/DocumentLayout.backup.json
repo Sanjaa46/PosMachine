@@ -3,20 +3,116 @@
   "WorkspaceRootPath": "C:\\Users\\sanja\\source\\repos\\PosMachine\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\paymentform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\paymentform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\paymentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\paymentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\paymentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\paymentform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\data\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\data\\databasehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\receiptform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\receiptform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\receiptform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\receiptform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\properties\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\properties\\settings.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\properties\\resources.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\properties\\assemblyinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\productmanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\productmanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|C:\\Users\\sanja\\source\\repos\\PosMachine\\posmachine\\productmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\productmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\productlistform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\productlistform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\productlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\productlistform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\models\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\models\\orderitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\models\\order.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\form1.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\categorymanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\categorymanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\categorymanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\categorymanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\productmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\productmanagementform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|c:\\users\\sanja\\source\\repos\\posmachine\\posmachine\\categorymanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|C:\\Users\\sanja\\source\\repos\\PosMachine\\posmachine\\categorymanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\categorymanagementform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|C:\\Users\\sanja\\source\\repos\\PosMachine\\posmachine\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D4F4AD44-E416-4C7E-8CDC-D5DD24BE10A2}|PosMachine\\PosMachine.csproj|solutionrelative:posmachine\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,8 +122,267 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 8,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PaymentForm.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\PaymentForm.cs",
+              "RelativeDocumentMoniker": "PosMachine\\PaymentForm.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\PaymentForm.cs",
+              "RelativeToolTip": "PosMachine\\PaymentForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:32:31.657Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PaymentForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\PaymentForm.cs",
+              "RelativeDocumentMoniker": "PosMachine\\PaymentForm.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\PaymentForm.cs [Design]",
+              "RelativeToolTip": "PosMachine\\PaymentForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:32:27.44Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ReceiptForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\ReceiptForm.Designer.cs",
+              "RelativeDocumentMoniker": "PosMachine\\ReceiptForm.Designer.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\ReceiptForm.Designer.cs",
+              "RelativeToolTip": "PosMachine\\ReceiptForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:30:28.423Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "ReceiptForm.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\ReceiptForm.cs",
+              "RelativeDocumentMoniker": "PosMachine\\ReceiptForm.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\ReceiptForm.cs",
+              "RelativeToolTip": "PosMachine\\ReceiptForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:30:22.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Settings.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Properties\\Settings.Designer.cs",
+              "RelativeDocumentMoniker": "PosMachine\\Properties\\Settings.Designer.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Properties\\Settings.Designer.cs",
+              "RelativeToolTip": "PosMachine\\Properties\\Settings.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:30:16.772Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Resources.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Properties\\Resources.Designer.cs",
+              "RelativeDocumentMoniker": "PosMachine\\Properties\\Resources.Designer.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Properties\\Resources.Designer.cs",
+              "RelativeToolTip": "PosMachine\\Properties\\Resources.Designer.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAYwC4AAAB1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:29:57.403Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AssemblyInfo.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Properties\\AssemblyInfo.cs",
+              "RelativeDocumentMoniker": "PosMachine\\Properties\\AssemblyInfo.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Properties\\AssemblyInfo.cs",
+              "RelativeToolTip": "PosMachine\\Properties\\AssemblyInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:29:47.456Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductManagementForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\ProductManagementForm.Designer.cs",
+              "RelativeDocumentMoniker": "PosMachine\\ProductManagementForm.Designer.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\ProductManagementForm.Designer.cs",
+              "RelativeToolTip": "PosMachine\\ProductManagementForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:29:38.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PaymentForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\PaymentForm.Designer.cs",
+              "RelativeDocumentMoniker": "PosMachine\\PaymentForm.Designer.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\PaymentForm.Designer.cs",
+              "RelativeToolTip": "PosMachine\\PaymentForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:29:06.966Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "ProductListForm.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\ProductListForm.Designer.cs",
+              "RelativeDocumentMoniker": "PosMachine\\ProductListForm.Designer.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\ProductListForm.Designer.cs",
+              "RelativeToolTip": "PosMachine\\ProductListForm.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:29:23.196Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Program.cs",
+              "RelativeDocumentMoniker": "PosMachine\\Program.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Program.cs",
+              "RelativeToolTip": "PosMachine\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:23:17.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "DatabaseHelper.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Data\\DatabaseHelper.cs",
+              "RelativeDocumentMoniker": "PosMachine\\Data\\DatabaseHelper.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Data\\DatabaseHelper.cs",
+              "RelativeToolTip": "PosMachine\\Data\\DatabaseHelper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:19:27.489Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductListForm.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\ProductListForm.cs",
+              "RelativeDocumentMoniker": "PosMachine\\ProductListForm.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\ProductListForm.cs",
+              "RelativeToolTip": "PosMachine\\ProductListForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:29:14.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "User.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Models\\User.cs",
+              "RelativeDocumentMoniker": "PosMachine\\Models\\User.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Models\\User.cs",
+              "RelativeToolTip": "PosMachine\\Models\\User.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:29:00.702Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "PosMachine\\Models\\Product.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Models\\Product.cs",
+              "RelativeToolTip": "PosMachine\\Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:28:54.538Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "OrderItem.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Models\\OrderItem.cs",
+              "RelativeDocumentMoniker": "PosMachine\\Models\\OrderItem.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Models\\OrderItem.cs",
+              "RelativeToolTip": "PosMachine\\Models\\OrderItem.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:28:45.793Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Order.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Models\\Order.cs",
+              "RelativeDocumentMoniker": "PosMachine\\Models\\Order.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Models\\Order.cs",
+              "RelativeToolTip": "PosMachine\\Models\\Order.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:28:39.767Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "MainForm.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\MainForm.cs",
+              "RelativeDocumentMoniker": "PosMachine\\MainForm.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\MainForm.cs",
+              "RelativeToolTip": "PosMachine\\MainForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:28:19.063Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Form1.Designer.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Form1.Designer.cs",
+              "RelativeDocumentMoniker": "PosMachine\\Form1.Designer.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Form1.Designer.cs",
+              "RelativeToolTip": "PosMachine\\Form1.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:27:58.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Form1.cs",
+              "RelativeDocumentMoniker": "PosMachine\\Form1.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Form1.cs",
+              "RelativeToolTip": "PosMachine\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:27:52.101Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
@@ -37,8 +392,96 @@
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:2:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:3:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 11,
+              "Title": "ProductManagementForm.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\ProductManagementForm.cs",
+              "RelativeDocumentMoniker": "PosMachine\\ProductManagementForm.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\ProductManagementForm.cs",
+              "RelativeToolTip": "PosMachine\\ProductManagementForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-17T12:27:36.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "PosMachine\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Models\\Category.cs",
+              "RelativeToolTip": "PosMachine\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:27:06.382Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\LoginForm.cs",
+              "RelativeDocumentMoniker": "PosMachine\\LoginForm.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\LoginForm.cs",
+              "RelativeToolTip": "PosMachine\\LoginForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:21:49.361Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "CategoryManagementForm.cs",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\CategoryManagementForm.cs",
+              "RelativeDocumentMoniker": "PosMachine\\CategoryManagementForm.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\CategoryManagementForm.cs",
+              "RelativeToolTip": "PosMachine\\CategoryManagementForm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:20:49.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CategoryManagementForm.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\CategoryManagementForm.cs",
+              "RelativeDocumentMoniker": "PosMachine\\CategoryManagementForm.cs",
+              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\CategoryManagementForm.cs [Design]",
+              "RelativeToolTip": "PosMachine\\CategoryManagementForm.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-19T05:20:19.479Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
               "Title": "CategoryManagementForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\CategoryManagementForm.Designer.cs",
               "RelativeDocumentMoniker": "PosMachine\\CategoryManagementForm.Designer.cs",
@@ -51,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 27,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "PosMachine\\MainForm.Designer.cs",
@@ -64,20 +507,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ProductManagementForm.cs",
-              "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\ProductManagementForm.cs",
-              "RelativeDocumentMoniker": "PosMachine\\ProductManagementForm.cs",
-              "ToolTip": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\ProductManagementForm.cs",
-              "RelativeToolTip": "PosMachine\\ProductManagementForm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T12:27:36.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 25,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\sanja\\source\\repos\\PosMachine\\PosMachine\\Form1.cs",
               "RelativeDocumentMoniker": "PosMachine\\Form1.cs",
