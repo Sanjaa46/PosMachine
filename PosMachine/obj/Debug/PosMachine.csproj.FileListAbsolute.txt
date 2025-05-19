@@ -2,3 +2,11 @@ C:\Users\sanja\source\repos\PosMachine\PosMachine\obj\Debug\PosMachine.csproj.As
 C:\Users\sanja\source\repos\PosMachine\PosMachine\obj\Debug\PosMachine.Properties.Resources.resources
 C:\Users\sanja\source\repos\PosMachine\PosMachine\obj\Debug\PosMachine.csproj.GenerateResource.cache
 C:\Users\sanja\source\repos\PosMachine\PosMachine\obj\Debug\PosMachine.csproj.CoreCompileInputs.cache
+C:\Users\sanja\source\repos\PosMachine\PosMachine\bin\Debug\PosMachine.exe.config
+C:\Users\sanja\source\repos\PosMachine\PosMachine\bin\Debug\PosMachine.exe
+C:\Users\sanja\source\repos\PosMachine\PosMachine\bin\Debug\PosMachine.pdb
+C:\Users\sanja\source\repos\PosMachine\PosMachine\bin\Debug\System.Data.SQLite.dll
+C:\Users\sanja\source\repos\PosMachine\PosMachine\bin\Debug\System.Data.SQLite.xml
+C:\Users\sanja\source\repos\PosMachine\PosMachine\obj\Debug\PosMachine.csproj.Up2Date
+C:\Users\sanja\source\repos\PosMachine\PosMachine\obj\Debug\PosMachine.exe
+C:\Users\sanja\source\repos\PosMachine\PosMachine\obj\Debug\PosMachine.pdb
