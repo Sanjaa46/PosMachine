@@ -28,14 +28,22 @@ namespace POSMachine
             _products = DatabaseHelper.GetAllProducts();
             _categories = DatabaseHelper.GetAllCategories();
 
-            // Initialize a new order
-            NewOrder();
+            try
+            {
+                // Initialize a new order
+                NewOrder();
 
-            // Set up the UI based on user role
-            SetupUserInterface();
+                // Set up the UI based on user role
+                SetupUserInterface();
 
-            // Load products into the product panel
-            LoadProducts();
+                // Load products into the product panel
+                LoadProducts();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error initializing the main form: {ex.Message}",
+                    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void NewOrder()

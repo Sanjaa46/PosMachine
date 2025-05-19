@@ -24,20 +24,28 @@ namespace POSMachine
 
         private void LoadData()
         {
-            _products = DatabaseHelper.GetAllProducts();
-            _categories = DatabaseHelper.GetAllCategories();
-
-            // Populate category filter
-            cboFilter.Items.Clear();
-            cboFilter.Items.Add("All Categories");
-            foreach (var category in _categories)
+            try
             {
-                cboFilter.Items.Add(category.Name);
-            }
-            cboFilter.SelectedIndex = 0;
+                _products = DatabaseHelper.GetAllProducts();
+                _categories = DatabaseHelper.GetAllCategories();
 
-            // Display products
-            DisplayProducts();
+                // Populate category filter
+                cboFilter.Items.Clear();
+                cboFilter.Items.Add("All Categories");
+                foreach (var category in _categories)
+                {
+                    cboFilter.Items.Add(category.Name);
+                }
+                cboFilter.SelectedIndex = 0;
+
+                // Display products
+                DisplayProducts();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Error loading data: {ex.Message}", "Error",
+                    MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void DisplayProducts(int? categoryId = null)
