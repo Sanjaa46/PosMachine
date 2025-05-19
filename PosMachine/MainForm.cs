@@ -17,10 +17,6 @@ namespace POSMachine
         private Order _currentOrder;
         private List<Category> _categories;
 
-        // Tax rates
-        private const decimal CGST_RATE = 0.03m; // 3%
-        private const decimal IGST_RATE = 0.04m; // 4%
-
         public MainForm(User user)
         {
             InitializeComponent();
@@ -104,37 +100,36 @@ namespace POSMachine
                 Label categoryLabel = new Label
                 {
                     Text = categoryName,
-                    Font = new Font("Arial", 12, FontStyle.Bold),
+                    Font = new Font("Segoe UI", 12, FontStyle.Bold),
                     Dock = DockStyle.Top,
                     Width = flowLayoutPanelProducts.Width - 10,
-                    BackColor = Color.LightGray,
-                    Padding = new Padding(5)
+                    BackColor = Color.FromArgb(230, 230, 230),
+                    Padding = new Padding(10)
                 };
 
                 flowLayoutPanelProducts.Controls.Add(categoryLabel);
 
-                // Add products for this category
+                // Add products for this category in the format shown in the screenshot
                 foreach (var product in categoryGroup)
                 {
-                    // Create a product panel
+                    // Create product panel
                     Panel productPanel = new Panel
                     {
-                        Width = 150,
-                        Height = 170,
-                        Margin = new Padding(5),
+                        Width = 180,
+                        Height = 200,
+                        Margin = new Padding(8),
                         BackColor = Color.White,
-                        BorderStyle = BorderStyle.FixedSingle,
-                        Tag = product
+                        BorderStyle = BorderStyle.None
                     };
 
                     // Add product image (or placeholder)
                     PictureBox productImage = new PictureBox
                     {
-                        Width = 140,
-                        Height = 100,
+                        Width = 160,
+                        Height = 120,
                         SizeMode = PictureBoxSizeMode.Zoom,
-                        Location = new Point(5, 5),
-                        BorderStyle = BorderStyle.FixedSingle
+                        Location = new Point(10, 10),
+                        BorderStyle = BorderStyle.None
                     };
 
                     if (product.Image != null && product.Image.Length > 0)
@@ -147,21 +142,7 @@ namespace POSMachine
                     else
                     {
                         // Use placeholder image based on category
-                        switch (categoryName)
-                        {
-                            case "Pizza":
-                                productImage.BackColor = Color.LightYellow;
-                                break;
-                            case "Pasta":
-                                productImage.BackColor = Color.LightPink;
-                                break;
-                            case "Sandwich":
-                                productImage.BackColor = Color.LightBlue;
-                                break;
-                            default:
-                                productImage.BackColor = Color.LightGray;
-                                break;
-                        }
+                        productImage.BackColor = Color.LightGray;
                     }
 
                     productPanel.Controls.Add(productImage);
@@ -170,9 +151,9 @@ namespace POSMachine
                     Label codeLabel = new Label
                     {
                         Text = $"Code: {product.Code}",
-                        Location = new Point(5, 110),
-                        Width = 140,
-                        Font = new Font("Arial", 8)
+                        Location = new Point(10, 135),
+                        Width = 160,
+                        Font = new Font("Segoe UI", 9)
                     };
                     productPanel.Controls.Add(codeLabel);
 
@@ -180,20 +161,20 @@ namespace POSMachine
                     Label nameLabel = new Label
                     {
                         Text = product.Name,
-                        Location = new Point(5, 128),
-                        Width = 140,
-                        Font = new Font("Arial", 9, FontStyle.Bold)
+                        Location = new Point(10, 155),
+                        Width = 160,
+                        Font = new Font("Segoe UI", 9, FontStyle.Bold)
                     };
                     productPanel.Controls.Add(nameLabel);
 
-                    // Add price
+                    // Add price with dollar sign
                     Label priceLabel = new Label
                     {
-                        Text = $"${product.Price:N0}",
-                        Location = new Point(5, 146),
-                        Width = 140,
-                        TextAlign = ContentAlignment.MiddleCenter,
-                        Font = new Font("Arial", 10, FontStyle.Bold)
+                        Text = $"${product.Price:0}",
+                        Location = new Point(10, 175),
+                        Width = 160,
+                        TextAlign = ContentAlignment.MiddleRight,
+                        Font = new Font("Segoe UI", 10, FontStyle.Bold)
                     };
                     productPanel.Controls.Add(priceLabel);
 
@@ -334,20 +315,16 @@ namespace POSMachine
         private void UpdateTotals()
         {
             decimal subtotal = _currentOrder.Items.Sum(item => item.Total);
-            decimal cgst = subtotal * CGST_RATE;
-            decimal igst = subtotal * IGST_RATE;
-            decimal total = subtotal + cgst + igst;
+
+            // No tax calculation at all
+            decimal total = subtotal;
 
             _currentOrder.Subtotal = subtotal;
-            _currentOrder.CGST = cgst;
-            _currentOrder.IGST = igst;
             _currentOrder.Total = total;
 
-            // Update the UI
-            lblSubtotalValue.Text = subtotal.ToString("0.0");
-            lblCGSTValue.Text = cgst.ToString("0.0");
-            lblIGSTValue.Text = igst.ToString("0.0");
-            lblTotalValue.Text = total.ToString("0.0");
+            // Update the UI - only subtotal and total
+            lblSubtotalValue.Text = subtotal.ToString("0.00");
+            lblTotalValue.Text = total.ToString("0.00");
         }
 
         private void btnPay_Click(object sender, EventArgs e)

@@ -59,10 +59,8 @@ namespace POSMachine
 
             sb.AppendLine(new string('-', 40));
 
-            // Totals
+            // Totals - no tax fields
             sb.AppendLine($"{"Subtotal:",30} {_order.Subtotal,10:0.00}");
-            sb.AppendLine($"{"CGST (3%):",30} {_order.CGST,10:0.00}");
-            sb.AppendLine($"{"IGST (4%):",30} {_order.IGST,10:0.00}");
             sb.AppendLine($"{"Total:",30} {_order.Total,10:0.00}");
             sb.AppendLine($"{"Amount Paid:",30} {_order.AmountPaid,10:0.00}");
             sb.AppendLine($"{"Change:",30} {_order.Change,10:0.00}");

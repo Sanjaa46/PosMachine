@@ -96,6 +96,7 @@ namespace POSMachine
             this.panel2.Controls.Add(this.cboFilter);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.txtSearch);
+            this.panel2.Controls.Add(this.picSearchIcon);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(0, 60);
             this.panel2.Name = "panel2";
@@ -129,6 +130,20 @@ namespace POSMachine
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Search:";
+            //
+            // searchIcon
+            //
+            this.picSearchIcon = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picSearchIcon)).BeginInit();
+
+            // Configure the search icon
+            this.picSearchIcon.BackColor = System.Drawing.Color.Transparent;
+            this.picSearchIcon.Location = new System.Drawing.Point(35, 16);
+            this.picSearchIcon.Name = "picSearchIcon";
+            this.picSearchIcon.Size = new System.Drawing.Size(24, 24);
+            this.picSearchIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.picSearchIcon.TabIndex = 4;
+            this.picSearchIcon.TabStop = false;
             // 
             // txtSearch
             // 
@@ -225,11 +240,15 @@ namespace POSMachine
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).EndInit();
             this.ResumeLayout(false);
 
+
+            ((System.ComponentModel.ISupportInitialize)(this.picSearchIcon)).EndInit();
+
         }
 
         #endregion
 
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox picSearchIcon;
         private System.Windows.Forms.Button btnClose;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel panel2;

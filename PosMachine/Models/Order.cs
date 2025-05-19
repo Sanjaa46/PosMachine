@@ -12,8 +12,6 @@ namespace POSMachine.Models
         public DateTime OrderDate { get; set; }
         public int UserId { get; set; }
         public decimal Subtotal { get; set; }
-        public decimal CGST { get; set; }
-        public decimal IGST { get; set; }
         public decimal Total { get; set; }
         public decimal AmountPaid { get; set; }
         public decimal Change { get; set; }
