@@ -68,7 +68,7 @@ namespace POSMachine.Data
                         FOREIGN KEY (CategoryId) REFERENCES Categories(Id)
                     );";
 
-                        // Create Orders table - NO TAX FIELDS
+                        // Create Orders table
                         string createOrderTableSql = @"
                     CREATE TABLE Orders (
                         Id INTEGER PRIMARY KEY AUTOINCREMENT,

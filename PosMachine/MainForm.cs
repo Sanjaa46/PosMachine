@@ -103,6 +103,7 @@ namespace POSMachine
                     Font = new Font("Segoe UI", 12, FontStyle.Bold),
                     Dock = DockStyle.Top,
                     Width = flowLayoutPanelProducts.Width - 10,
+                    Height = 40,
                     BackColor = Color.FromArgb(230, 230, 230),
                     Padding = new Padding(10)
                 };
