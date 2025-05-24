@@ -63,7 +63,6 @@ namespace POSMachine
             this.panel3 = new System.Windows.Forms.Panel();
             this.lblTotalValue = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
-            this.lblSubtotalValue = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.btnPay = new System.Windows.Forms.Button();
             this.dataGridViewCart = new System.Windows.Forms.DataGridView();
@@ -306,7 +305,6 @@ namespace POSMachine
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.lblTotalValue);
             this.panel3.Controls.Add(this.label11);
-            this.panel3.Controls.Add(this.lblSubtotalValue);
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.btnPay);
             this.panel3.Location = new System.Drawing.Point(3, 424);
@@ -337,17 +335,6 @@ namespace POSMachine
             this.label11.TabIndex = 8;
             this.label11.Text = "Total";
             // 
-            // lblSubtotalValue
-            // 
-            this.lblSubtotalValue.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblSubtotalValue.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSubtotalValue.Location = new System.Drawing.Point(596, 22);
-            this.lblSubtotalValue.Name = "lblSubtotalValue";
-            this.lblSubtotalValue.Size = new System.Drawing.Size(112, 15);
-            this.lblSubtotalValue.TabIndex = 3;
-            this.lblSubtotalValue.Text = "450.0";
-            this.lblSubtotalValue.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -356,7 +343,6 @@ namespace POSMachine
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(55, 15);
             this.label5.TabIndex = 2;
-            this.label5.Text = "Subtotal:";
             // 
             // btnPay
             // 
@@ -556,7 +542,6 @@ namespace POSMachine
         private System.Windows.Forms.Button btnPay;
         private System.Windows.Forms.Label lblTotalValue;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Label lblSubtotalValue;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label lblSeparator1;
         private System.Windows.Forms.DataGridViewTextBoxColumn ProductId;

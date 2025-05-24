@@ -315,16 +315,10 @@ namespace POSMachine
 
         private void UpdateTotals()
         {
-            decimal subtotal = _currentOrder.Items.Sum(item => item.Total);
+            decimal total = _currentOrder.Items.Sum(item => item.Total);
 
-            // No tax calculation at all
-            decimal total = subtotal;
-
-            _currentOrder.Subtotal = subtotal;
             _currentOrder.Total = total;
 
-            // Update the UI - only subtotal and total
-            lblSubtotalValue.Text = subtotal.ToString("0.00");
             lblTotalValue.Text = total.ToString("0.00");
         }
 
