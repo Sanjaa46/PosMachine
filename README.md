@@ -8,7 +8,7 @@ Simple POS System нь C# Windows Forms технологи дээр үндэсл
 
 ### 1. Repository-г татах
 ```bash
-git clone [repository-url]
+git clone https://github.com/Sanjaa46/PosMachine.git
 cd PosMachine
 ```
 
