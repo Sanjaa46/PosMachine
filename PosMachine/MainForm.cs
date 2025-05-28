@@ -61,7 +61,7 @@ namespace POSMachine
         private void SetupUserInterface()
         {
             // Set the title with current user
-            this.Text = $"Simple POS - Logged in as {_currentUser.Username}";
+            this.Text = $"Simple POS - Modern Design - Logged in as {_currentUser.Username}";
 
             // Set up menu visibility based on role
             if (_currentUser.Role == UserRole.Manager)
@@ -96,94 +96,198 @@ namespace POSMachine
                 var category = _categories.FirstOrDefault(c => c.Id == categoryGroup.Key);
                 string categoryName = category != null ? category.Name : "Uncategorized";
 
-                // Create a header for the category
+                // Create a modern category header
+                Panel categoryPanel = new Panel
+                {
+                    Width = flowLayoutPanelProducts.Width - 40,
+                    Height = 50,
+                    BackColor = Color.FromArgb(55, 65, 81),
+                    Margin = new Padding(5, 10, 5, 5)
+                };
+
                 Label categoryLabel = new Label
                 {
                     Text = categoryName,
-                    Font = new Font("Segoe UI", 12, FontStyle.Bold),
-                    Dock = DockStyle.Top,
-                    Width = flowLayoutPanelProducts.Width - 10,
-                    Height = 40,
-                    BackColor = Color.FromArgb(230, 230, 230),
-                    Padding = new Padding(10)
+                    Font = new Font("Segoe UI", 14, FontStyle.Bold),
+                    ForeColor = Color.White,
+                    AutoSize = false,
+                    Width = categoryPanel.Width - 20,
+                    Height = categoryPanel.Height,
+                    TextAlign = ContentAlignment.MiddleLeft,
+                    Location = new Point(15, 0)
                 };
 
-                flowLayoutPanelProducts.Controls.Add(categoryLabel);
+                categoryPanel.Controls.Add(categoryLabel);
+                flowLayoutPanelProducts.Controls.Add(categoryPanel);
 
-                // Add products for this category in the format shown in the screenshot
+                // Add products for this category with modern card design
                 foreach (var product in categoryGroup)
                 {
-                    // Create product panel
+                    // Create modern product card
                     Panel productPanel = new Panel
                     {
-                        Width = 180,
-                        Height = 200,
-                        Margin = new Padding(8),
+                        Width = 200,
+                        Height = 280,
+                        Margin = new Padding(10),
                         BackColor = Color.White,
+                        BorderStyle = BorderStyle.FixedSingle,
+                        Cursor = Cursors.Hand
+                    };
+
+                    // Add product image container with modern styling
+                    Panel imageContainer = new Panel
+                    {
+                        Width = 180,
+                        Height = 140,
+                        Location = new Point(10, 10),
+                        BackColor = Color.FromArgb(248, 250, 252),
                         BorderStyle = BorderStyle.None
                     };
 
-                    // Add product image (or placeholder)
                     PictureBox productImage = new PictureBox
                     {
                         Width = 160,
                         Height = 120,
                         SizeMode = PictureBoxSizeMode.Zoom,
                         Location = new Point(10, 10),
-                        BorderStyle = BorderStyle.None
+                        BorderStyle = BorderStyle.None,
+                        Cursor = Cursors.Hand
                     };
 
                     if (product.Image != null && product.Image.Length > 0)
                     {
-                        using (var ms = new System.IO.MemoryStream(product.Image))
+                        try
                         {
-                            productImage.Image = Image.FromStream(ms);
+                            using (var ms = new System.IO.MemoryStream(product.Image))
+                            {
+                                productImage.Image = Image.FromStream(ms);
+                            }
+                        }
+                        catch
+                        {
+                            // Use placeholder if image fails to load
+                            productImage.BackColor = Color.FromArgb(229, 231, 235);
                         }
                     }
                     else
                     {
-                        // Use placeholder image based on category
-                        productImage.BackColor = Color.LightGray;
+                        // Modern placeholder design
+                        productImage.BackColor = Color.FromArgb(229, 231, 235);
                     }
 
-                    productPanel.Controls.Add(productImage);
+                    imageContainer.Controls.Add(productImage);
+                    productPanel.Controls.Add(imageContainer);
 
-                    // Add code label
+                    // Add product code with modern styling
                     Label codeLabel = new Label
                     {
-                        Text = $"Code: {product.Code}",
-                        Location = new Point(10, 135),
-                        Width = 160,
-                        Font = new Font("Segoe UI", 9)
+                        Text = $"#{product.Code}",
+                        Location = new Point(15, 160),
+                        Width = 170,
+                        Height = 20,
+                        Font = new Font("Segoe UI", 9, FontStyle.Regular),
+                        ForeColor = Color.FromArgb(107, 114, 128),
+                        TextAlign = ContentAlignment.MiddleLeft,
+                        Cursor = Cursors.Hand
                     };
                     productPanel.Controls.Add(codeLabel);
 
-                    // Add product name
+                    // Add product name with modern typography
                     Label nameLabel = new Label
                     {
                         Text = product.Name,
-                        Location = new Point(10, 155),
-                        Width = 160,
-                        Font = new Font("Segoe UI", 9, FontStyle.Bold)
+                        Location = new Point(15, 185),
+                        Width = 170,
+                        Height = 40,
+                        Font = new Font("Segoe UI", 11, FontStyle.Bold),
+                        ForeColor = Color.FromArgb(55, 65, 81),
+                        TextAlign = ContentAlignment.TopLeft,
+                        Cursor = Cursors.Hand
                     };
                     productPanel.Controls.Add(nameLabel);
 
-                    // Add price with dollar sign
+                    // Add modern price label with accent color
+                    Panel pricePanel = new Panel
+                    {
+                        Width = 170,
+                        Height = 35,
+                        Location = new Point(15, 235),
+                        BackColor = Color.FromArgb(37, 99, 235),
+                        Cursor = Cursors.Hand
+                    };
+
                     Label priceLabel = new Label
                     {
-                        Text = $"${product.Price:0}",
-                        Location = new Point(10, 175),
-                        Width = 160,
-                        TextAlign = ContentAlignment.MiddleRight,
-                        Font = new Font("Segoe UI", 10, FontStyle.Bold)
+                        Text = $"${product.Price:0.00}",
+                        Width = pricePanel.Width,
+                        Height = pricePanel.Height,
+                        Font = new Font("Segoe UI", 12, FontStyle.Bold),
+                        ForeColor = Color.White,
+                        TextAlign = ContentAlignment.MiddleCenter,
+                        BackColor = Color.Transparent,
+                        Cursor = Cursors.Hand
                     };
-                    productPanel.Controls.Add(priceLabel);
 
-                    // Add click event to add product to cart
-                    productPanel.Click += (s, e) => AddProductToCart(product);
-                    productImage.Click += (s, e) => AddProductToCart(product);
-                    nameLabel.Click += (s, e) => AddProductToCart(product);
-                    priceLabel.Click += (s, e) => AddProductToCart(product);
+                    pricePanel.Controls.Add(priceLabel);
+                    productPanel.Controls.Add(pricePanel);
+
+                    // Store product reference in Tag for easy access
+                    productPanel.Tag = product;
+                    imageContainer.Tag = product;
+                    productImage.Tag = product;
+                    nameLabel.Tag = product;
+                    pricePanel.Tag = product;
+                    priceLabel.Tag = product;
+                    codeLabel.Tag = product;
+
+                    // Add hover effects
+                    productPanel.MouseEnter += (s, e) =>
+                    {
+                        productPanel.BackColor = Color.FromArgb(248, 250, 252);
+                        pricePanel.BackColor = Color.FromArgb(29, 78, 216);
+                    };
+
+                    productPanel.MouseLeave += (s, e) =>
+                    {
+                        productPanel.BackColor = Color.White;
+                        pricePanel.BackColor = Color.FromArgb(37, 99, 235);
+                    };
+
+                    // Add click events to all components using the Tag property
+                    productPanel.Click += (s, e) => {
+                        var p = (Product)((Control)s).Tag;
+                        if (p != null) AddProductToCart(p);
+                    };
+
+                    imageContainer.Click += (s, e) => {
+                        var p = (Product)((Control)s).Tag;
+                        if (p != null) AddProductToCart(p);
+                    };
+
+                    productImage.Click += (s, e) => {
+                        var p = (Product)((Control)s).Tag;
+                        if (p != null) AddProductToCart(p);
+                    };
+
+                    nameLabel.Click += (s, e) => {
+                        var p = (Product)((Control)s).Tag;
+                        if (p != null) AddProductToCart(p);
+                    };
+
+                    pricePanel.Click += (s, e) => {
+                        var p = (Product)((Control)s).Tag;
+                        if (p != null) AddProductToCart(p);
+                    };
+
+                    priceLabel.Click += (s, e) => {
+                        var p = (Product)((Control)s).Tag;
+                        if (p != null) AddProductToCart(p);
+                    };
+
+                    codeLabel.Click += (s, e) => {
+                        var p = (Product)((Control)s).Tag;
+                        if (p != null) AddProductToCart(p);
+                    };
 
                     flowLayoutPanelProducts.Controls.Add(productPanel);
                 }
@@ -206,7 +310,7 @@ namespace POSMachine
                     if (Convert.ToInt32(row.Cells["ProductId"].Value) == product.Id)
                     {
                         row.Cells["Quantity"].Value = existingItem.Quantity;
-                        row.Cells["Total"].Value = existingItem.Total;
+                        row.Cells["Total"].Value = existingItem.Total.ToString("N2");
                         break;
                     }
                 }
@@ -230,9 +334,9 @@ namespace POSMachine
 
                 row.Cells["ProductId"].Value = newItem.ProductId;
                 row.Cells["ProductName"].Value = newItem.ProductName;
-                row.Cells["Price"].Value = newItem.Price;
+                row.Cells["Price"].Value = newItem.Price.ToString("N2");
                 row.Cells["Quantity"].Value = newItem.Quantity;
-                row.Cells["Total"].Value = newItem.Total;
+                row.Cells["Total"].Value = newItem.Total.ToString("N2");
             }
 
             // Update the order totals
@@ -274,7 +378,7 @@ namespace POSMachine
 
                     // Update grid
                     dataGridViewCart.Rows[rowIndex].Cells["Quantity"].Value = item.Quantity;
-                    dataGridViewCart.Rows[rowIndex].Cells["Total"].Value = item.Total;
+                    dataGridViewCart.Rows[rowIndex].Cells["Total"].Value = item.Total.ToString("N2");
 
                     // Update totals
                     UpdateTotals();
@@ -298,7 +402,7 @@ namespace POSMachine
 
                         // Update grid
                         dataGridViewCart.Rows[rowIndex].Cells["Quantity"].Value = item.Quantity;
-                        dataGridViewCart.Rows[rowIndex].Cells["Total"].Value = item.Total;
+                        dataGridViewCart.Rows[rowIndex].Cells["Total"].Value = item.Total.ToString("N2");
                     }
                     else
                     {
@@ -316,10 +420,10 @@ namespace POSMachine
         private void UpdateTotals()
         {
             decimal total = _currentOrder.Items.Sum(item => item.Total);
-
+            _currentOrder.Subtotal = total;
             _currentOrder.Total = total;
 
-            lblTotalValue.Text = total.ToString("0.00");
+            lblTotalValue.Text = total.ToString("N2");
         }
 
         private void btnPay_Click(object sender, EventArgs e)
@@ -503,16 +607,16 @@ namespace POSMachine
         {
             // Show help information
             MessageBox.Show(
-                "Simple POS System\n\n" +
+                "Simple POS System - Modern Design\n\n" +
                 "To add items to cart:\n" +
-                "- Click on a product image\n" +
-                "- Or enter the product code in the text box and press Enter\n\n" +
+                "- Click on a product card\n" +
+                "- Or enter the product code in the search box and press Enter\n\n" +
                 "To change quantity:\n" +
-                "- Use the + and - buttons in the cart\n\n" +
+                "- Use the + and − buttons in the cart\n\n" +
                 "To remove an item:\n" +
-                "- Click the X button in the cart\n\n" +
+                "- Click the 🗑 button in the cart\n\n" +
                 "To complete a sale:\n" +
-                "- Click the Pay button and enter the amount paid",
+                "- Click the 💳 PAY NOW button and enter the amount paid",
                 "Help", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
@@ -520,14 +624,13 @@ namespace POSMachine
         {
             // Show about information
             MessageBox.Show(
-                "Simple POS System\n\n" +
-                "Version 1.0\n" +
-                "© 2025 All Rights Reserved",
+                "Simple POS System\n" +
+                "Version 2.0\n" +
+                "© 2025 All Rights Reserved\n\n" +
+                "Features:\n" +
+                "• Card-based product display\n" +
+                "• Visual design\n",
                 "About", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
-
-        
-
-        
     }
 }
