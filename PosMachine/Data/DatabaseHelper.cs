@@ -131,20 +131,20 @@ namespace POSMachine.Data
                         // Insert sample categories
                         string insertCategoriesSql = @"
                             INSERT INTO Categories (Name) VALUES 
-                            ('Pizza'),
-                            ('Pasta'),
-                            ('Sandwich');";
+                            ('Лаазалсан бүтээгдэхүүн'),
+                            ('Гоо сайхан'),
+                            ('Ус, ундаа');";
 
                         // Insert sample products
                         string insertProductsSql = @"
                             INSERT INTO Products (Code, Name, Price, CategoryId) VALUES 
-                            ('1', 'Margherita', 100.0, 1),
-                            ('2', 'Marinara', 200.0, 1),
-                            ('3', 'Vegetarians', 150.0, 1),
-                            ('4', 'Alfedo', 200.0, 1),
-                            ('5', 'Spaghetti Pasta', 150.0, 2),
-                            ('6', 'White Sauce Pasta', 200.0, 2),
-                            ('8', 'American Sub', 100.0, 3);";
+                            ('1', 'Загас', 100.0, 1),
+                            ('2', 'Шош', 200.0, 1),
+                            ('3', 'Эрдэнэ шиш', 150.0, 1),
+                            ('4', 'Өргөст хэмх', 200.0, 1),
+                            ('5', 'Нарны тос', 150.0, 2),
+                            ('6', 'Гарын тос', 200.0, 2),
+                            ('8', 'Cola', 100.0, 3);";
 
                         ExecuteNonQuery(connection, transaction, insertUsersSql);
                         ExecuteNonQuery(connection, transaction, insertCategoriesSql);
@@ -169,7 +169,7 @@ namespace POSMachine.Data
             }
         }
 
-        // Improved AuthenticateUser method
+        // AuthenticateUser method
         public static User AuthenticateUser(string username, string password)
         {
             using (var connection = new SQLiteConnection(_connectionString))
@@ -202,7 +202,6 @@ namespace POSMachine.Data
             return null;
         }
 
-        // Additional Database Helper methods with improved connection management
 
         // Get all products
         public static List<Product> GetAllProducts()
