@@ -98,15 +98,15 @@ PosMachine/
 Систем анх удаа ажиллахад дараах жишээ өгөгдлүүд үүсгэгдэнэ:
 
 ### Ангиллууд:
-- Pizza
-- Pasta  
-- Sandwich
+- Лаазалсан бүтээгдэхүүн
+- Гоо сайхан  
+- Ус, ундаа
 
 ### Бүтээгдэхүүнүүд:
-- Margherita (Code: 1, Price: $100)
-- Marinara (Code: 2, Price: $200)
-- Vegetarians (Code: 3, Price: $150)
-- Alfredo (Code: 4, Price: $200)
-- Spaghetti Pasta (Code: 5, Price: $150)
-- White Sauce Pasta (Code: 6, Price: $200)
-- American Sub (Code: 8, Price: $100)
+- Загас (Code: 1, Price: $100)
+- Шош (Code: 2, Price: $200)
+- Эрдэнэ шиш (Code: 3, Price: $150)
+- Өргөст хэмх (Code: 4, Price: $200)
+- Нарны тос (Code: 5, Price: $150)
+- Гарын тос (Code: 6, Price: $200)
+- Cola (Code: 8, Price: $100)
